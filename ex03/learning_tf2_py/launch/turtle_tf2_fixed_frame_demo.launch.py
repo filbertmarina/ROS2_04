@@ -20,7 +20,10 @@ def generate_launch_description():
         demo_nodes,
         Node(
             package='learning_tf2_py',
-            executable='fixed_frame_tf2_broadcaster',
+            executable='turtle_tf2_listener',
             name='fixed_broadcaster',
+            parameters=[
+                {'delay': '2.0'}
+            ]
         ),
     ])
